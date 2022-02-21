@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+<head>
+  <meta charset="utf-8">
+  <title>Classical Dance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/foods.css">
+  <link href="css/header.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header"> 
+				   
+					   
+                    <h1>REMINISE INDIA</h1>
+                    <span style="flex: 1 auto;"></span>
+                    
+                    <div class="nav-link" >
+                    <a class="nav-link" href="/home">Home </a>
+                    <a class="nav-link" href="/myabout">About </a>
+                    </div>
+                    
+                    <div  style="display: flex;align-items: center">
+                        <a class="nav-link" th:text="${fullName}" ></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <form th:action="@{/login}" method="post">
+                          <button class="sg-btn"type="submit" value="Sign Out">Sign Out</button>
+                        </form>
+                    </div>
+                   
+            </header>
+            <div class="smbr" >
+                <div>
+
+
+									<div class="dropdown"  >
+								  <button class="dropbtn">Historic Places</button>
+								  <div class="dropdown-content" style="left:0;">
+								  <a th:href="@{/monuments}">Monuments</a>
+								  <a th:href="@{/forts}">Forts</a>
+								  </div>
+								</div>
+								
+
+								<div class="dropdown"  >
+								  <button class="dropbtn">Heritage</button>
+								  <div class="dropdown-content" style="left:0;">
+								  <a th:href="@{/manmade}">Manmade</a>
+								  <a th:href="@{/natural}">Natural</a>
+								  <a th:href="@{/mixed}">Mixed</a>
+								  </div>
+								</div>
+
+
+								<div class="dropdown"  >
+								  <button class="dropbtn">Culture</button>
+								  <div class="dropdown-content" style="left:0;">
+								  <a th:href="@{/dance}">Dance</a>
+								  <a th:href="@{/foods}">FoodCuisine</a>
+								  </div>
+								</div>
+								
+								<div class="dropdown"  >
+								  <button class="dropbtn">Tradition</button>
+								  <div class="dropdown-content" style="left:0;">
+								  <a th:href="@{/dress}">Dress Style</a>
+								  <a th:href="@{/festivals}">Festivals</a>
+								  </div>
+								</div>
+
+                        </div>
+           <br>
+<div class="wrapper">
+	<div class="header">Classical Dances of India</div>
+
+	<div class="cards_wrap">
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/Kuchipudi(AP).jpg">
+				<div class="role_name">Kuchipudi </div>
+				<div class="real_name">Andhra Pradesh</div>
+				<div class="film">Kuchipudi has developed as a Hindu god Krishna-oriented Vaishnavism tradition-lightening of the incense sticks, sprinkling holy water, and praying to God.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/sattriya(assam).jpg">
+				<div class="role_name">Sattriya</div>
+				<div class="real_name">Assam</div>
+				<div class="film">This dance form was previously performed by the male monks but over the years it has evolved and has been performed by females as well.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/manipuri(north east).jpg">
+				<div class="role_name">Manipuri</div>
+				<div class="real_name">North East</div>
+				<div class="film"> Manipuri, also called Jagoi, has different themes sometimes such as themes that are related to Shaivism and Shaktism.Showcasing Krishna and Radhaâ€™s romantic encounters.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/odissi(orrisa).jpg">
+				<div class="role_name">Odissi</div>
+				<div class="real_name">Orissa</div>
+				<div class="film">Performed on the classical music genre of Odramagadhi, it can be often found this dance form has its roots in Shaktism and Vaishnavism. With its vivid expressions.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/Kathak(uttarpradesh).jpg">
+				<div class="role_name">Kathak</div>
+				<div class="real_name">Uttar Pradesh</div>
+				<div class="film">It is referred to as dance of love courtesy between Radha and Krishna. Kathak is the only classical dance form which matches its rhythmic to North Indian music.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/kathakali(kerala).jpg">
+				<div class="role_name">Kathakali</div>
+				<div class="real_name">Kerala</div>
+				<div class="film">Another classical dance form originating in Kerala years ago, it focuses mainly on â€œstory-tellingâ€�- generally performing extracts from Mahabharata and Ramayana </div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/bharatanatyam(tamilnadu).jpg">
+				<div class="role_name">Bharatnatyam</div>
+				<div class="real_name">Tamil Nadu</div>
+				<div class="film">This is a classical form of dance which was initially performed in the ancient temples as a devotion to God.Rich in expressions ,hand movements.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="images/Perini Thandavam(telangana).png">
+				<div class="role_name">Perini Thandavam</div>
+				<div class="real_name">Telangana</div>
+				<div class="film">Perini Thandavam is an ancient dance form, from Telangana, which has been revived in recent times. It originated in Telangana, during the Kakatiya dynasty.</div>
+			</div>
+		</div>
+	</div>
+</div>  
+</body>
+</html>
